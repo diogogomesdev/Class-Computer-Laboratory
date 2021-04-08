@@ -54,3 +54,14 @@ int decimal(char* str){
     }
     return answer;
 }
+
+int repetidos(int* vec, int size){
+    for(int i=0;i<size-1;i++){
+        for(int j=i+1; j<size-1;j++){
+            if(vec[i] == vec[j]) return 1;
+        }
+    }
+
+    return 0;
+}
+
