@@ -29,3 +29,28 @@ int palindromo(char* str){
     if(count == half) return 1;
     else return 0;
 }
+
+int decimal(char* str){
+
+    int size = 0;
+    int i=0;
+
+    // size array of chars
+    while(str[i] != '\0'){
+        size++;
+        i++;
+    }
+
+    int number, answer = 0;
+
+    for(int i=size-1; i>=0; i--){
+        number = (int)str[i] - 48;
+
+        for(int j=i;j<size-1;j++){
+            number *= 10;
+        }
+
+        answer += number;
+    }
+    return answer;
+}
