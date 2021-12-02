@@ -1,4 +1,5 @@
 # Computer-Laboratory
 
-Class: Computer Laboratory
-Language: C
+> Class: Computer Laboratory
+
+> Language: C
